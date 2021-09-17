@@ -1,3 +1,21 @@
 export default (state = [], action) => {
-  return state;
-}
+      
+    switch (action.type) {
+
+      case "ADD_QUOTE": 
+        const newQuote = {
+          id: action.quote.id,
+          content: action.quote.content,
+          author: action.quote.author,
+          votes: quote.action.vote
+        }
+
+        return (state = [...state, newQuote] );
+
+        default: 
+                return state
+
+
+  }
+   }
+
